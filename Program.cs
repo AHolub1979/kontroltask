@@ -2,7 +2,7 @@
 // длина которых меньше, либо равна 3 символам
 
 
-string[] availableArray = new string[4] {"1", "156", "-2", "computer science"};
+string[] availableArray = new string[4] {"1234", "156", "-2", "computer science"};
 string[] newArray = new string[availableArray.Length];
 void SecondArray(string[] arrayA, string[] arrayN)
 {
@@ -20,7 +20,7 @@ void PrintArray(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write($"{array[i]} ");
+        Console.Write($"'{array[i]}', ");
     }
     Console.WriteLine();
 }

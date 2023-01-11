@@ -2,16 +2,16 @@
 // длина которых меньше, либо равна 3 символам
 
 
-string[] array1 = new string[5] {"1234", "235", "hello", "world", "res"};
-string[] array2 = new string[array1.Length];
-void SecondArrayWithIF(string[] array1, string[] array2)
+string[] availableArray = new string[4] {"1", "156", "-2", "computer science"};
+string[] newArray = new string[availableArray.Length];
+void SecondArray(string[] arrayA, string[] arrayN)
 {
     int count = 0;
-    for (int i = 0; i < array1.Length; i++)
+    for (int i = 0; i < arrayA.Length; i++)
     {
-    if(array1[i].Length <= 3)
+    if(arrayA[i].Length <= 3)
         {
-        array2[count] = array1[i];
+        arrayN[count] = arrayA[i];
         count++;
         }
     }
@@ -24,5 +24,5 @@ void PrintArray(string[] array)
     }
     Console.WriteLine();
 }
-SecondArrayWithIF(array1, array2);
-PrintArray(array2);
+SecondArray(availableArray, newArray);
+PrintArray(newArray);
